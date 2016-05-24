@@ -1,0 +1,63 @@
+.btn__countur {
+  transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  display: block;
+  margin: 0px auto;
+  max-width: 250px;
+
+  .modular-scale(2);
+  font-size: @modular-scale-return;
+  & {
+    .modular-scale(3);
+    line-height: @modular-scale-return;
+  }
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 13px 20px;
+  color: @white;
+  box-shadow: @white 0 0px 0px 2px inset;
+
+  &:hover {
+    color: @white;
+    box-shadow: @white 0 0px 0px 40px inset;
+  }
+
+// btn makara
+
+  &--makara {
+    &:extend(.btn__countur);
+  }
+
+  &--makara:hover {
+    color: @makara;
+    box-shadow: @white 0 0px 0px 40px inset;
+  }
+
+// btn gray-90
+
+  &--gray-90 {
+    &:extend(.btn__countur);
+    color: multiply(@concord, @gray-90, 50%);
+    box-shadow: multiply(@concord, @gray-90, 50%) 0 0px 0px 2px inset;
+  }
+
+  &--gray-90:hover {
+    color: @gray-90;
+    box-shadow: multiply(@concord, @gray-90, 50%) 0 0px 0px 40px inset;
+  }
+
+// btn aquamarine
+
+  &--aquamarine {
+    &:extend(.btn__countur);
+    color: multiply(@concord, @aquamarine, 50%);
+    box-shadow: multiply(@concord, @aquamarine, 50%) 0 0px 0px 2px inset;
+  }
+
+  &--aquamarine:hover {
+    color: @aquamarine;
+    box-shadow: multiply(@concord, @aquamarine, 50%) 0 0px 0px 40px inset;
+  }
+
+}

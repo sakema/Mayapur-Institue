@@ -1,0 +1,170 @@
+.grid-mixin-flex() {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid {
+  .grid-mixin-flex;
+
+  &--top {
+    .grid-mixin-flex;
+    align-items: flex-start;
+  }
+
+  &--middle {
+    .grid-mixin-flex;
+    align-items: center;
+  }
+
+  &--bottom {
+    .grid-mixin-flex;
+    align-items: flex-end;
+  }
+
+  &--stretch {
+    .grid-mixin-flex;
+    align-items: stretch;
+  }
+
+  &--baseline {
+    .grid-mixin-flex;
+    align-items: baseline;
+  }
+
+  &--left {
+    .grid-mixin-flex;
+    justify-content:flex-start;
+  }
+
+  &--center {
+    .grid-mixin-flex;
+    justify-content:center;
+  }
+
+  &--right {
+    .grid-mixin-flex;
+    justify-content:flex-end;
+  }
+
+  &--between {
+    .grid-mixin-flex;
+    justify-content:space-between;
+  }
+
+  &--around {
+    .grid-mixin-flex;
+    justify-content:space-around;
+  }
+}
+
+.cell-mixin-flex() {
+  box-sizing:border-box;
+  flex-shrink:0;
+}
+
+.cell {
+  .cell-mixin-flex;
+
+  &--fill {
+    .cell-mixin-flex;
+    width:0;
+    min-width:0;
+    flex-grow:1;
+  }
+
+  &--1of12 {
+    .cell-mixin-flex;
+    width:8.33333%;
+  }
+
+  &--2of12 {
+    .cell-mixin-flex;
+    width:16.66667%;
+  }
+
+  &--3of12 {
+    .cell-mixin-flex;
+    width:25%;
+  }
+
+  &--4of12 {
+    .cell-mixin-flex;
+    width:33.33333%;
+  }
+
+  &--5of12 {
+    .cell-mixin-flex;
+    width:41.66667%;
+  }
+
+  &--6of12 {
+    .cell-mixin-flex;
+    width:50%;
+  }
+
+  &--7of12 {
+    .cell-mixin-flex;
+    width:58.33333%;
+  }
+
+  &--8of12 {
+    .cell-mixin-flex;
+    width:66.66667%;
+  }
+
+  &--9of12 {
+    .cell-mixin-flex;
+    width:75%;
+  }
+
+  &--10of12 {
+    .cell-mixin-flex;
+    width:83.33333%;
+  }
+
+  &--11of12 {
+    .cell-mixin-flex;
+    width:91.66667%;
+  }
+
+  &--12of12 {
+    .cell-mixin-flex;
+    width:100%;
+  }
+}
+
+
+
+
+/*
+Grid modifiers
+
+To align items with align-items
+-top: To top
+-middle: To middle
+-bottom: To bottom
+-stretch: Stretch items
+-baseline: To baseline
+To layout contents with justify-content
+-left: To left
+-center: To center
+-right: To right
+-between: Add spaces between items
+-around: Add spaces around items
+Cell modifiers
+
+-fill: Set item width to left width of parent
+-1of12: Set item width to 8.3% of parent
+-2of12: Set item width to 16.7% of parent
+-3of12: Set item width to 25% of parent
+-4of12: Set item width to 33% of parent
+-5of12: Set item width to 41.7% of parent
+-6of12: Set item width to 50% of parent
+-7of12: Set item width to 58.3% of parent
+-8of12: Set item width to 66.7% of parent
+-9of12: Set item width to 75% of parent
+-10of12: Set item width to 83.3% of parent
+-11of12: Set item width to 91.7% of parent
+-12of12: Set item width to 100% of parent
+
+*/

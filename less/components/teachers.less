@@ -1,0 +1,48 @@
+.teachers {
+  background-color: @aquamarine;
+  padding-top: @block-padding-top;
+  padding-bottom: @block-padding-bottom;
+
+  &__inner {
+
+  }
+
+  &__header {
+    &:extend(h2);
+    color: multiply(@concord, @aquamarine, 50%);
+    text-align: center;
+    margin-bottom: @element-margin-bottom;
+  }
+
+  &__list {
+
+  }
+
+  &__item {
+    width: 32%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin-bottom: @element-margin-bottom;
+  }
+
+  &__img-wrap {
+    margin: 0 auto;
+    width: 72px;
+    height: 72px;
+    margin-bottom: @element-margin-bottom-sm;
+  }
+
+  &__img {
+    background-color: @pattens-blue;
+    border-radius: 100px;
+    width: 72px;
+    height: 72px;
+  }
+
+  &__name {
+    text-align: center;
+
+  }
+
+}

@@ -1,0 +1,89 @@
+.course-item {
+  
+  background-color: @white;
+  margin-bottom: @element-margin-bottom;
+  border-radius: 4px 4px 4px 4px;
+  border: 1px solid @concord;
+  max-width: 305px;
+
+  &--soon {
+    border-bottom: 6px solid @limeade;
+  }
+
+  &--starting {
+    border-bottom: 6px solid @california-poppy;
+  }
+
+  &--ended {
+    border-bottom: 6px solid @milano-red;
+  }
+
+
+  &__link {
+
+  }
+
+  &__cover-img-wrap {
+
+  }
+
+  &__cover {
+    background-color: @pattens-blue;
+    border-radius: 4px 4px 0 0;
+  }
+
+// mixin
+  #course-item-status() {
+    &:extend(small);
+    margin: 0;
+    color: @white;
+    padding: @element-inner-padding-hz;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  &__status {
+    #course-item-status();
+    background-color: @concord;
+  }
+
+  &__status--soon {
+    #course-item-status();
+    background-color: @limeade;
+  }
+
+  &__status--starting {
+    #course-item-status();
+    background-color: @california-poppy;
+  }
+
+  &__status--ended {
+    #course-item-status();
+    background-color: @milano-red;
+  }
+
+  &__date {
+    padding: @element-inner-padding-hz;
+    margin-top: @element-margin-top;
+    color: @milano-red;
+  }
+
+  &__date-icon {
+
+  }
+
+  &__header {
+    &:extend(h3);
+    padding: @element-inner-padding-hz;
+    margin-top: @element-margin-top;
+    color: @concord;
+  }
+
+  &__description {
+    padding: @element-inner-padding-hz;
+    margin-top: @element-margin-top;
+    margin-bottom: @element-margin-bottom;
+    color: @concord;
+  }
+
+}

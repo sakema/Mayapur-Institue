@@ -1,0 +1,63 @@
+//mixin start
+
+.pagination(@color){
+  width: 10px;
+  height: 10px;
+  border: 2px solid lighten(@color, 25%);
+  border-radius: 100px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 4px;
+  transition: .3s;
+
+  &:hover {
+    transition: .3s;
+    border-color: lighten(@color, 50%);
+    background: lighten(@color, 50%);
+
+    &:before {
+      opacity: 1;
+    }
+
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+.pagination--active(@color) {
+  background: lighten(@color, 25%);
+}
+
+.position(){
+  height: 0px;
+  text-align: center;
+}
+
+//mixin end
+
+
+.pagination {
+  .position();
+
+  & a {
+    .pagination(@color: @white);
+  }
+
+  &--black-pearl {
+    .position();
+    & a {
+      .pagination(@color: @black-pearl);
+    }
+  }
+
+//Activ
+
+  &__active {
+    .pagination--active(@color: @white);
+
+    &--black-pearl {
+      .pagination--active(@color: @black-pearl);
+    }
+  }
+}
