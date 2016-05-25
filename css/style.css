@@ -405,6 +405,11 @@ small,
 	border-top: 8px solid #993333;
 }
 
+.student-experience__inner {
+	margin: 0 auto;
+	width: 98%;
+}
+
 .student-experience__header {
 	color: #ffffff;
 	text-align: center;
@@ -417,6 +422,11 @@ small,
 	padding-bottom: 60px;
 }
 
+.articles__inner {
+	margin: 0 auto;
+	width: 98%;
+}
+
 .articles__header {
 	color: #202628;
 	text-align: center;
@@ -427,6 +437,11 @@ small,
 	background-color: #63c6ae;
 	padding-top: 40px;
 	padding-bottom: 60px;
+}
+
+.teachers__inner {
+	margin: 0 auto;
+	width: 98%;
 }
 
 .teachers__header {
@@ -465,6 +480,11 @@ small,
 	background-color: #202628;
 	padding-top: 40px;
 	padding-bottom: 25px;
+}
+
+.page-footer__inner {
+	margin: 0 auto;
+	width: 98%;
 }
 
 .page-footer__header {
@@ -605,6 +625,8 @@ small,
 
 .slider-student-experience {
 	color: #ffffff;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .slider-student-experience__item {
