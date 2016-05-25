@@ -720,8 +720,13 @@ small,
 }
 
 .slider-articles__img-wrap {
-	margin-bottom: 12px;
 	background-color: #dbe1e7;
+	max-width: 640px;
+	max-height: 360px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 12px;
 }
 
 .slider-articles__header {
