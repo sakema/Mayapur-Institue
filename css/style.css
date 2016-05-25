@@ -450,6 +450,18 @@ small,
 	margin-bottom: 25px;
 }
 
+.teachers__list {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+
 .teachers__item {
 	width: 32%;
 	display: inline-block;
