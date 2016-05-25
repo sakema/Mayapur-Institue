@@ -1,20 +1,27 @@
 .course-item {
-  
   background-color: @white;
   margin-bottom: @element-margin-bottom;
   border-radius: 4px 4px 4px 4px;
   border: 1px solid @concord;
   max-width: 305px;
+  overflow-x: hidden;
+  height: 387px;
+}
+
+.course-item {
 
   &--soon {
+    &:extend(.course-item);
     border-bottom: 6px solid @limeade;
   }
 
   &--starting {
+    &:extend(.course-item);
     border-bottom: 6px solid @california-poppy;
   }
 
   &--ended {
+    &:extend(.course-item);
     border-bottom: 6px solid @milano-red;
   }
 

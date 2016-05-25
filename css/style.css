@@ -518,12 +518,17 @@ small,
 	color: rgba(232, 76, 61, 0.7);
 }
 
-.course-item {
+.course-item,
+.course-item--soon,
+.course-item--starting,
+.course-item--ended {
 	background-color: #ffffff;
 	margin-bottom: 25px;
 	border-radius: 4px 4px 4px 4px;
 	border: 1px solid #7E7C76;
 	max-width: 305px;
+	overflow-x: hidden;
+	height: 387px;
 }
 
 .course-item--soon {
